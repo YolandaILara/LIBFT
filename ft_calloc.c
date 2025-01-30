@@ -19,5 +19,19 @@ int main()
   char ptr[] = "Hola buenos dias que tal estas";
   int i;
 
+  ptr = ft_calloc (10, sizeof(char));
+  if (ptr == NULL)
+  {
+    printf ("Error al asignar la memoria\n");
+    return (1);
+  }
+  i = 0;
+  while (i < 10)
+  {
+    printf ("%d: %d\n", i, ptr[i]);
+    i++;
+  }
+  free(ptr);
+  return (0);
   
 }
