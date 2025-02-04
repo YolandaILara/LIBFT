@@ -15,13 +15,15 @@ char *ft_strdup(const char *s) {
 
 /*#include <stdio.h>
 
-int main() {
-    char texto[] = "Hola, mundo";  // Texto original
+int main() 
+{
+    char texto[] = "Hola, mundo"; 
     char *copia;
     
     copia = ft_strdup (texto);
 
-    if (!copia) {  // Verifica si la copia falló
+    if (!copia) 
+    {  
         printf("Error al duplicar la cadena\n");
         return 1;
     }
@@ -29,6 +31,6 @@ int main() {
     printf("Original: %s\n", texto);
     printf("Copia: %s\n", copia);
 
-    free(copia);  // Liberar memoria reservada por strdup
+    free(copia);  
     return 0;
 }*/
